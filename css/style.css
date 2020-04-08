@@ -13,6 +13,10 @@
   flex-direction: column;
 }
 
+.d-grid {
+  display: grid;
+}
+
 .b-white {
   background-color: #fff;
 }
@@ -121,7 +125,6 @@ nav ul li input:hover {
 }
 
 .search-form {
-  display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
   column-gap: 1px;
   padding: 0 100px;
@@ -150,7 +153,6 @@ input[id="search"]:hover {
 }
 
 .grid-container {
-  display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 10px;
 }
@@ -202,10 +204,9 @@ input[id="search"]:hover {
   }
 
   .grid-box {
-    display: grid;
     grid-template-columns: 1fr 5fr;
     column-gap: 10px;
-    padding: 0 10px;
+    padding: 20px 10px;
   }
 
   .hidden-description {
@@ -247,9 +248,8 @@ input[id="search"]:hover {
   }
 
   .grid-box {
-    display: grid;
     grid-template-columns: 1fr;
-    padding: 0 10px;
+    padding: 20px 10px;
   }
 
   .form-box {
