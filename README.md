@@ -1,10 +1,10 @@
 # Bazar Online Shop
 
-> This project is a Online Shop.
+> This project is an Online Shop.
 
 ![screenshot](screenshot.PNG)
 
-The essence of the project is to validate the use of the practices of HTML5/CSS3 and Bootstrap4 to develop a webpage. This webpage contains Header, Main and Footer. The Header Section contains navbar, titles and links. The Main Section is the products part of the webpage where all the product images have laid out. The Footer Section has different links to navigate other pages of the webpage. The Structure of the webpages has been structured by using Grid and Flexbox.
+The essence of the project is to validate the use of the best practices of HTML5/CSS3 and Bootstrap4 to develop a webpage. This webpage contains Header, Main and Footer. The Header Section contains navbar, titles and links. The Main Section is the products part of the webpage where all the product images have laid out. The Footer Section has different links to navigate other pages of the webpage. The Structure of the webpages has been structured by using Grid and Flexbox.
 
 ## Built With
 
@@ -14,11 +14,11 @@ The essence of the project is to validate the use of the practices of HTML5/CSS3
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/3rkeen/apple-clone/21dacb29178670232f38f16f2db5817797e4f8eb/index.html)
+[Live Demo Link](https://rawcdn.githack.com/3rkeen/bazar/786138bdc64ff61312884e12d5caba0c47637da8/index.html)
 
 ## Getting Started
 
-Click once on the [Live Demo Link](https://rawcdn.githack.com/3rkeen/apple-clone/21dacb29178670232f38f16f2db5817797e4f8eb/index.html)
+Click once on the [Live Demo Link](https://rawcdn.githack.com/3rkeen/bazar/786138bdc64ff61312884e12d5caba0c47637da8/index.html)
 
 ## Author
 
