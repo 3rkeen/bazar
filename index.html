@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneaker Store</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="flex-row b-dark">
+        <ul class="list-unstyled flex-row nav-one">
+          <li>
+            <a
+              href="index.html"
+              class="text-decoration-none gotham-bold c-white"
+            >
+              <i class="fab fa-bootstrap fa-3x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none gotham-light c-gray">
+              <i class="fas fa-home"></i>
+              <span>HOME</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none gotham-light c-gray">
+              <i class="fas fa-list"></i>
+              <span>COLLECTIONS</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none gotham-light c-gray">
+              <i class="fas fa-shopping-cart"></i>
+              <span>PURCHASE LIST</span>
+            </a>
+          </li>
+          <li>
+            <label for="post-ad">
+              <input
+                id="post-ad"
+                type="submit"
+                value="POST AN AD"
+                class="gotham-ligh c-white b-pink p-2 border-0"
+              />
+            </label>
+          </li>
+        </ul>
+        <ul class="list-unstyled flex-row nav-two">
+          <li>
+            <a href="#" class="text-decoration-none gotham-light c-gray">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none gotham-light c-gray">
+              <span>ERKIN SHERALIEV</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="https://lh3.googleusercontent.com/a-/AOh14GgNCD8mAkz1hpdKGt05go-WBWIoTJd59GE6zADV=s88-c-k-c0x00ffffff-no-rj-mo"
+                alt="Erkin Sheraliev"
+                class="profile-img rounded-circle"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-top b-pink">
+        <div class="flex-col align-items-center">
+          <h2 class="gotham-bold c-white">BAZAR</h2>
+          <p class="gotham-light c-white">
+            Buying and Selling Couldn't be Simpler than this!
+          </p>
+        </div>
+        <div>
+          <form action="search.html" class="search-form">
+            <select name="select" id="select">
+              <option value="all-departments">All Departments</option>
+              <option value="furniture">Furniture</option>
+              <option value="books">Books</option>
+              <option value="furniture">Real Estate</option>
+            </select>
+            <input
+              type="text"
+              id="item"
+              placeholder="What do you search for?"
+              class="gotham-light"
+              required
+            />
+            <input
+              type="text"
+              id="city"
+              placeholder="Location"
+              class="gotham-light"
+              required
+            />
+            <input
+              type="submit"
+              id="search"
+              value="SEARCH"
+              class="gotham-light b-dark border-0 c-white"
+            />
+          </form>
+        </div>
+      </section>
+
+      <section class="hot-ads section-content">
+        <div id="hot-ads" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <h5 class="helvetica-bold c-gray">HOT ADS</h5>
+            <hr />
+            <div class="carousel-item active">
+              <div class="hot-ads-box flex-row">
+                <div class="hot-ads-img">
+                  <a href="#">
+                    <img
+                      src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div>
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-pink hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <p class="helvetica-medium c-gray">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ad sequi pariatur culpa reiciendis tempora ratione vitae
+                      quibusdam, voluptate neque magni aliquid in molestias a
+                      quo adipisci ducimus maxime, repellendus sit.
+                    </p>
+                  </div>
+                  <div>
+                    <span class="helvetica-bold c-gray">By:</span
+                    ><span class="helvetica-light c-gray">Erkin Sheraliev</span>
+                  </div>
+                  <span class="helvetica-bold c-gray">Location: </span
+                  ><span class="helvetica-light c-gray">
+                    Menlo Park, California, United States</span
+                  >
+                  <div class="hot-btn">
+                    <button
+                      class="b-pink c-white border-0 rounded-left p-1 hover-gray"
+                    >
+                      $450
+                    </button>
+                    <button
+                      class="b-pink c-white border-0 rounded-right p-1 hover-gray"
+                    >
+                      <i class="fas fa-shopping-cart"></i> Purchase Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="hot-ads-box flex-row">
+                <div class="hot-ads-img">
+                  <a href="#">
+                    <img
+                      src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div>
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-pink hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <p class="helvetica-medium c-gray">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ad sequi pariatur culpa reiciendis tempora ratione vitae
+                      quibusdam, voluptate neque magni aliquid in molestias a
+                      quo adipisci ducimus maxime, repellendus sit.
+                    </p>
+                  </div>
+                  <div>
+                    <span class="helvetica-bold c-gray">By:</span
+                    ><span class="helvetica-light c-gray">Erkin Sheraliev</span>
+                  </div>
+                  <span class="helvetica-bold c-gray">Location: </span
+                  ><span class="helvetica-light c-gray">
+                    Menlo Park, California, United States</span
+                  >
+                  <div class="hot-btn">
+                    <button
+                      class="b-pink c-white border-0 rounded-left p-1 hover-gray"
+                    >
+                      $450
+                    </button>
+                    <button
+                      class="b-pink c-white border-0 rounded-right p-1 hover-gray"
+                    >
+                      <i class="fas fa-shopping-cart"></i> Purchase Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="hot-ads-box flex-row">
+                <div class="hot-ads-img">
+                  <a href="#">
+                    <img
+                      src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div>
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-pink hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <p class="helvetica-medium c-gray">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ad sequi pariatur culpa reiciendis tempora ratione vitae
+                      quibusdam, voluptate neque magni aliquid in molestias a
+                      quo adipisci ducimus maxime, repellendus sit.
+                    </p>
+                  </div>
+                  <div>
+                    <span class="helvetica-bold c-gray">By:</span
+                    ><span class="helvetica-light c-gray">Erkin Sheraliev</span>
+                  </div>
+                  <span class="helvetica-bold c-gray">Location: </span
+                  ><span class="helvetica-light c-gray">
+                    Menlo Park, California, United States</span
+                  >
+                  <div class="hot-btn">
+                    <button
+                      class="b-pink c-white border-0 rounded-left p-1 hover-gray"
+                    >
+                      $450
+                    </button>
+                    <button
+                      class="b-pink c-white border-0 rounded-right p-1 hover-gray"
+                    >
+                      <i class="fas fa-shopping-cart"></i> Purchase Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a
+              class="slide-btn"
+              href="#hot-ads"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="cs-icon" aria-hidden="true"
+                ><i
+                  class="fas fa-chevron-left rounded-circle slide-icon c-pink hover-gray"
+                ></i
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="slide-btn"
+              href="#hot-ads"
+              role="button"
+              data-slide="next"
+            >
+              <span class="cs-icon" aria-hidden="true"
+                ><i
+                  class="fas fa-chevron-right rounded-circle slide-icon c-pink hover-gray"
+                ></i
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-content items-section">
+        <div id="furniture" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <h5 class="helvetica-bold c-dark pt-3">Furniture</h5>
+            <hr />
+            <div class="carousel-item active">
+              <div class="grid-container">
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded hidden-item">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="grid-container">
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded hidden-item">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a
+              class="slide-item-btn"
+              href="#furniture"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="cs-icon" aria-hidden="true"
+                ><i class="fas fa-chevron-left c-gray hover-pink"></i
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="slide-item-btn"
+              href="#furniture"
+              role="button"
+              data-slide="next"
+            >
+              <span class="cs-icon" aria-hidden="true"
+                ><i class="fas fa-chevron-right c-gray hover-pink"></i
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-content items-section">
+        <div id="books" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <h5 class="helvetica-bold c-dark pt-3">Books</h5>
+            <hr />
+            <div class="carousel-item active">
+              <div class="grid-container">
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded hidden-item">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="grid-container">
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded hidden-item">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a
+              class="slide-item-btn"
+              href="#books"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="cs-icon" aria-hidden="true"
+                ><i class="fas fa-chevron-left c-gray hover-pink"></i
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="slide-item-btn"
+              href="#books"
+              role="button"
+              data-slide="next"
+            >
+              <span class="cs-icon" aria-hidden="true"
+                ><i class="fas fa-chevron-right c-gray hover-pink"></i
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-content items-section">
+        <div id="electronics" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <h5 class="helvetica-bold c-dark pt-3">Real Estate</h5>
+            <hr />
+            <div class="carousel-item active">
+              <div class="grid-container">
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded hidden-item">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="grid-container">
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-box b-white p-1 rounded hidden-item">
+                  <div>
+                    <a href="#">
+                      <img
+                        src="https://i.ebayimg.com/thumbs/images/g/ZP8AAOSwIt5ehIYh/s-l225.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="p-1">
+                    <h5>
+                      <a
+                        href="#"
+                        class="text-decoration-none helvetica-bold c-gray hover-pink"
+                        >IPHONE XI PRO</a
+                      >
+                    </h5>
+                    <div class="helvetica-medium c-pink">Used</div>
+                    <span class="helvetica-bold c-gray">From:</span
+                    ><span class="helvetica-light c-gray"> Seattle, WA</span>
+                    <div class="flex-row justify-content-between">
+                      <a href="#" class="text-decoration-none"
+                        ><i
+                          class="fas fa-plus c-gray border p-1 hover-pink hover-gray"
+                        ></i
+                      ></a>
+                      <span class="helvetica-light c-pink">$450</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a
+              class="slide-item-btn"
+              href="#electronics"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="cs-icon" aria-hidden="true"
+                ><i class="fas fa-chevron-left c-gray hover-pink"></i
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="slide-item-btn"
+              href="#electronics"
+              role="button"
+              data-slide="next"
+            >
+              <span class="cs-icon" aria-hidden="true"
+                ><i class="fas fa-chevron-right c-gray hover-pink"></i
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-content">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md">
+            <a href="#"
+              ><i class="fab fa-bootstrap fa-3x hover-pink c-gray"></i
+            ></a>
+            <p class="helvetica-light c-gray">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              tenetur dolor porro consectetur neque asperiores quidem, dolore
+              eum voluptate distinctio mollitia, ipsa fuga quia officia?
+            </p>
+          </div>
+          <div class="col">
+            <span class="helvetica-bold c-pink">Categories</span>
+            <hr />
+            <div class="d-flex justify-content-around">
+              <ul class="list-unstyled helvetica-light footer-list">
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+              </ul>
+              <ul class="list-unstyled helvetica-light footer-list">
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <span class="helvetica-bold c-pink">Categories</span>
+            <hr />
+            <div class="d-flex justify-content-center">
+              <ul class="list-unstyled helvetica-light footer-list">
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none helvetica-light c-gray"
+                    >ipsum</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md flex-col align-self-center">
+            <div class="p-2">
+              <span class="pr-2 c-pink helvetica-bold">COUNTRY</span
+              ><button class="c-gray hover-pink helvetica-medium pl-1 pr-1">
+                United Kingtom
+              </button>
+            </div>
+            <div class="p-2">
+              <span class="pr-2 c-pink helvetica-bold">LANGUAGE</span
+              ><button class="c-gray hover-pink helvetica-medium pl-4 pr-4">
+                English
+              </button>
+            </div>
+            <div class="p-2">
+              <span class="pr-2 c-pink helvetica-bold">CURRENCY</span
+              ><button class="c-gray hover-pink helvetica-medium pl-1 pr-1">
+                Pound Sterling
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="p-4 flex-row justify-content-between align-items-center">
+        <div>
+          <span class="helvetica-light c-gray"
+            >Copyright© 2015 Zattix.com. All Rights Reserved. Designed by </span
+          ><a href="#">Mohammed Awad.</a>
+        </div>
+        <div class="c-gray">
+          <a href="#" class="c-gray hover-pink"
+            ><i class="fab fa-yahoo p-2"></i
+          ></a>
+          <a href="#" class="c-gray hover-pink"
+            ><i class="fab fa-google p-2"></i
+          ></a>
+          <a href="#" class="c-gray hover-pink"
+            ><i class="fab fa-linkedin-in p-2"></i
+          ></a>
+
+          <a href="#" class="c-gray hover-pink"
+            ><i class="fab fa-twitter p-2"></i
+          ></a>
+          <a href="#" class="c-gray hover-pink"
+            ><i class="fab fa-facebook-f p-2"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
